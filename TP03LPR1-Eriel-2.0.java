@@ -1,4 +1,4 @@
-import java.util.scanner;
+import java.util.Scanner;
 
 Scanner scanner = new Scanner();
 
@@ -101,7 +101,7 @@ Scanner scanner = new Scanner();
         System.out.println("DEFINIR NOVO HORÁRIO - 1");
         System.out.println("MOSTRAR HORÁRIO - 2");
         System.out.println("ENCERRAR PROGRAMA - 0");
-        opcao = scanner.next();
+        opcao = scanner.nextInt();
 
             switch (opcao) {
                 case 0:
@@ -117,9 +117,9 @@ Scanner scanner = new Scanner();
                 case 2:
                     if(h != 0 && m != 0 && s != 0) {
                         System.out.print("Hora atual inserida: ");
-                        System.out.println(hora.getHora1());
+                        hora.getHora1();
                         System.out.print("Hora atual formatada: ");
-                        System.out.print(hora.getHora2());
+                        hora.getHora2();
                         System.out.println("Hora atual em segundos: " + hora.getSegundos() + " segundos");
                     }
                     else
