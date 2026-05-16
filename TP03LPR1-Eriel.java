@@ -89,3 +89,37 @@ Scanner scanner = new Scanner(system.in);
             return segundostotais;
         }
     }
+
+    public main()
+    
+    {
+        Hora hora = new Hora();
+        int opcao, h, m , s;
+
+        do{
+        system("cls");
+        System.out.println("######################## BEM VINDO ########################");
+        System.out.println("");
+        system.out.println("Vamos utilizar o programa para definir as horas, e exibir, até mesmo em segundos.");
+        system.out.println("DEFINIR NOVO HORÁRIO - 1");
+        system.out.println("MOSTRAR EM SEGUNDOS - 2");
+        system.out.println("EXIBIR HORÁRIO ATUAL - 3");
+        system.out.println("ENCERRAR PROGRAMA - 0");
+        opcao = scanner.nextInt();
+
+            switch (opcao) {
+                case 1:
+                    hora.setHor();
+                    hora.setMin();
+                    hora.setSeg();
+                    break;
+            
+                default:
+                    break;
+            }
+
+
+        } while (opcao != 0);
+
+
+    }
