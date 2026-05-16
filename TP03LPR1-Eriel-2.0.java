@@ -1,6 +1,6 @@
-TP03LP1-Eriel
-
 import java.util.scanner;
+
+Scanner scanner = new Scanner();
 
     public class Hora
     {
@@ -90,7 +90,7 @@ import java.util.scanner;
     
     public static void main(String[] args)
     {
-        Scanner scanner = new Scanner();
+        
         Hora hora = new Hora(0,0,0);
         int opcao = 0, h = 0, m = 0 , s = 0; 
 
@@ -133,7 +133,7 @@ import java.util.scanner;
                     break;
                 }    
         } while (opcao != 0);
-
-
     }
-}
+
+
+    
